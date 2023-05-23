@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-     <title>Kevin's Resume - Profile HTML Page</title>
+     <title>{{ info.info.first_name}}'s Resume - Profile HTML Page</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -32,7 +32,7 @@ https://www.tooplate.com/view/2120-ben-resume
         <div class="container">
 
             <a class="navbar-brand" href="#">
-                Kevin Resume
+                {{ info.info.first_name}} Resume
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,8 @@ https://www.tooplate.com/view/2120-ben-resume
                 </ul>
 
                 <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
-                    <a href="#" class="custom-btn btn" download>Download CV</a>
+                    <!-- <a href="#" class="custom-btn btn" download>Download CV</a> -->
+                    <a class="custom-btn btn" href="../../static/resume/{{ info.info.first_name }}{{ info.info.last_name }}_Resume.pdf" download="{{ info.info.first_name }}{{ info.info.last_name }}_Resume.pdf">Download resume</a>
                 </div>
             </div>
 
@@ -74,16 +75,16 @@ https://www.tooplate.com/view/2120-ben-resume
             <div class="row">
 
                   <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="{% static 'images/ben.jpg' %}" class="img-fluid" alt="Ben Resume HTML Template">
+                    <img src="{% static 'images/true-agency.jpg' %}" class="about-image img-fluid" alt="Kevin's Resume HTML Template">
                   </div>
 
                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
                         <div class="hero-text">
 
-                            <h1 class="hero-title">👋 Kevin, a software engineer</h1>
+                            <h1 class="hero-title">👋 {{ info.info.first_name }}, a software engineer</h1>
 
                             <a href="#" class="email-link">
-                                ke012685@gmail.com
+                                {{ info.info.email}}
                             </a>
                           
                         </div>
@@ -98,38 +99,34 @@ https://www.tooplate.com/view/2120-ben-resume
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-12">
-                    <h3 class="mb-4">About me</h3>
-
+               
                     
-
-                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                        <li><strong>Full Name:</strong> {{ info.info.first_name }} {{ info.info.last_name}} </li>
-                        <li><strong>Date of Birth:</strong> {{ info.info.dob}}</li>
-                        <li><strong>phone:</strong> {{ info.info.phone}}</li>
-                        <li><strong>Email:</strong>{{ info.info.email}} </li>
-                        <li><strong>Linkedin:</strong>
-                          <a href="{{ info.info.linkedin}} ">Linkedin</a>
-                        </li>
-                        <li><strong>Github:</strong>
-                          <a href="{{ info.info.github}} ">Github</a>
-                        </li>
-                        
-                    </ul>
-                   
-                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
-                      <div><strong>SKills:</strong></div>
-                        <li><strong>Certifications :</strong> {{ info.skills.certifications|join:', ' }} </li>
-                        <li><strong>Programming Languages:</strong> {{ info.skills.programmingLanguages|join:', ' }} </li>
-                        <li><strong>Frameworks :</strong> {{ info.skills.frameworks|join:', ' }} </li>
-                        <li><strong>Databases:</strong>   {{ info.skills.databases|join:', ' }}  </li>
-                        <li><strong>Full Name :</strong> {{ info.skills.others|join:', ' }}</li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-5 mx-auto col-md-6 col-12">
-                    <img src="{% static 'images/true-agency.jpg' %}" class="about-image img-fluid" alt="Ben's Resume HTML Template">
-                </div>
+                    <div>
+                        <h3 >About me</h3>
+                        <ul>
+                            <div><strong>Personal Info:</strong></div>
+                            <li><strong>Full Name:</strong> {{ info.info.first_name }} {{ info.info.last_name}} </li>
+                            <li><strong>Date of Birth:</strong> {{ info.info.dob}}</li>
+                            <li><strong>phone:</strong> {{ info.info.phone}}</li>
+                            <li><strong>Email:</strong>{{ info.info.email}} </li>
+                            <li><strong>Linkedin:</strong>
+                            <a href="{{ info.info.linkedin}} ">Linkedin</a>
+                            </li>
+                            <li><strong>Github:</strong>
+                            <a href="{{ info.info.github}} ">Github</a>
+                            </li>
+                            
+                        </ul>
+                    
+                        <ul>
+                        <div><strong>Skills:</strong></div>
+                            <li><strong>Certifications :</strong> {{ info.skills.certifications|join:', ' }} </li>
+                            <li><strong>Programming Languages:</strong> {{ info.skills.programmingLanguages|join:', ' }} </li>
+                            <li><strong>Frameworks :</strong> {{ info.skills.frameworks|join:', ' }} </li>
+                            <li><strong>Databases:</strong>   {{ info.skills.databases|join:', ' }}  </li>
+                            <li><strong>Full Name :</strong> {{ info.skills.others|join:', ' }}</li>
+                        </ul>
+                    </div>
 
             </div>
             <div class="row about-third">
@@ -149,12 +146,12 @@ https://www.tooplate.com/view/2120-ben-resume
                     <div class="col-12">
                         <h3 class="mb-5 text-center">API</h3>
 
-                        <div class="link-container"><a href="">Get info</a></div>
-                        <div class="link-container"><a href="">Get summary</a></div>
-                        <div class="link-container"><a href="">Get skills</a></div>
-                        <div class="link-container"><a href="">Get languages</a></div>
-                        <div class="link-container"><a href="">Get workExperiences</a></div>
-                        <div class="link-container"><a href="">Get projects</a></div>
+                        <div class="link-container"><a href="./api/v1/info?sub_list=info">Get info</a></div>
+                        <div class="link-container"><a href="./api/v1/info?sub_list=summary">Get summary</a></div>
+                        <div class="link-container"><a href="./api/v1/info?sub_list=skills">Get skills</a></div>
+                        <div class="link-container"><a href="./api/v1/info?sub_list=languages">Get languages</a></div>
+                        <div class="link-container"><a href="./api/v1/info?sub_list=workExperience">Get workExperiences</a></div>
+                        <div class="link-container"><a href="./api/v1/info?sub_list=projects">Get projects</a></div>
                     </div>
 
                </div>
@@ -169,19 +166,19 @@ https://www.tooplate.com/view/2120-ben-resume
             <div class="mx-auto col-lg-4 col-md-6 col-12">
                 <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
 
-                <p class="mb-1">240-736-6933</p>
+                <p class="mb-1">{{ info.info.phone}}</p>
 
                 <p>
                     <a href="#">
-                        ke012685@gmail.com
+                        {{ info.info.email}}
                     <i class="fas fa-arrow-right custom-icon"></i>
                     </a>
                 </p>
 
                 <ul class="social-links mt-2">
                     
-                    <li><a href="https://www.instagram.com/kc__1996/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" rel="noopener" class="fab fa-instagram"></a></li>
-                    <li><a href="https://www.linkedin.com/in/kevin-chou-1996umd/" rel="noopener" class="fab fa-linkedin"></a></li>
+                    <li><a href="{{ info.info.github}}" rel="noopener" class="fab fa-github"></a></li>
+                    <li><a href="{{ info.info.linkedin}}" rel="noopener" class="fab fa-linkedin"></a></li>
                     
                 </ul>
                 

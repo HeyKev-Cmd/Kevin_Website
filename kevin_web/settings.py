@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'kevin_web_app',
     'django.contrib.staticfiles',
+    'rest_framework'
     
 ]
 
