@@ -1,0 +1,148 @@
+{
+   "info":{
+      "first_name":"Kevin",
+      "last_name":"Chou",
+      "dob":"Jan/26/1996",
+      "email":"ke012685@gmail.com",
+      "phone":"(240)736-6933",
+      "linkedin":"https://www.linkedin.com/in/kevin-chou-1996umd",
+      "github":"https://github.com/HeyKev-Cmd/project",
+      "disabled":false,
+      "veteran":false
+   },
+   "summary":{
+      "about":"Kevin Chou is a software engineer with experience in full-stack, backend, microservices development, and software testing. He has expertise in programming languages such as Java, Python, and JavaScript, as well as frameworks such as Git, Spring Boot, Junit, and Angular. Kevin has also worked with various databases, including MongoDB, AWS DynamoDB, and MySQL. He holds a CompTIA Security+ certification and is proficient in AWS and Dockers. Kevin's previous work experience includes internships at Formosa Plastics Corporation, Walton Advanced Engineering, and ESi Technology Ltd, as well as a research assistant role at Taiwan Information Security Center. He has also led several software development projects, including a Student Management System and an online learning platform for UMD students."
+   },
+   "skills":{
+      "certifications":[
+         "CompTIA Security+"
+      ],
+      "programmingLanguages":[
+         "Java",
+         "Python",
+         "C#",
+         "JavaScript",
+         "TypeScript",
+         "SQL",
+         "PHP"
+      ],
+      "frameworks":[
+         "Git",
+         "Junit",
+         "Spring Boot",
+         "Django",
+         "Angular",
+         ".NET",
+         "Dockers",
+         "Maven",
+         "Mockito"
+      ],
+      "databases":[
+         "MongoDB",
+         "PostgreSQL",
+         "DynamoDB",
+         "MySQL",
+         "Microsoft SQL Server"
+      ],
+      "others":[
+         "AWS",
+         "jQuery",
+         "AJAX",
+         "Selenium",
+         "web crawler"
+      ]
+   },
+   "languages":[
+      "English",
+      "Chinese"
+   ],
+   "workExperience":[
+      {
+         "company":"Formosa Plastics Corporation, U.S.A.",
+         "start_date":"Jun.2022",
+         "end_date":"Aug.2022",
+         "position":"Software Engineer Intern",
+         "responsibilities":[
+            "Improved production line efficiency by 50% by developing a full-stack material management system and conducting Unit testing and Integration testing.",
+            "Increased productivity by 15% by resolving concurrent updating and automated retry on failures by implementing database schema and database access layer.",
+            "Automated transfer and backup data between central and development databases using script programs.",
+            "Optimized user experience and reduced data errors by 15% by establishing a form validation function library developed by JavaScript, jQuery, and AJAX."
+         ]
+      },
+      {
+         "company":"Walton Advanced Engineering",
+         "start_date":"Sep.2020",
+         "end_date":"Oct.2020",
+         "position":"Software Engineer Intern",
+         "responsibilities":[
+            "Upgraded the Ticketing System, optimizing the user experience with the Enterprise Resource Planning (ERP) system and increasing user satisfaction to 90%.",
+            "Developed create/read/update/delete functionalities for the Ticketing System on the service layer by PHP and communicated with MySQL."
+         ]
+      },
+      {
+         "company":"Taiwan Information Security Center",
+         "start_date":"Oct.2018",
+         "end_date":"May.2019",
+         "position":"Research Assistant",
+         "responsibilities":[
+            "Enhanced medical data security by storing sensitive patient information on a Dockerized server on Linux via blockchain."
+         ]
+      },
+      {
+         "company":"ESi Technology Ltd -(Microsoft Gold-Certified Partner)",
+         "start_date":"Jun.2018",
+         "end_date":"Aug.2018",
+         "position":"Software Engineer Intern",
+         "responsibilities":[
+            "Facilitated data fetching by developing REST API on the .NET framework and conducted unit testing and Integration testing.",
+            "Created a CI/CD Workflow on GitLab CI to streamline work procedure time by 50%.",
+            "Strengthen user experience with a satisfaction rate of 90% by developing plug-in programs to customize user profiles and enable phone calls on Microsoft Dynamic Customer Relationship Management (Dynamic CRM)."
+         ]
+      }
+   ],
+   "projects":[
+      {
+         "name":"Student Management System",
+         "start_date":"Nov.2022",
+         "end_date":"Jan.2023",
+         "description":[
+            "Facilitated networking amongst Taiwanese students and alums in the DMV area networking by developing a REST API for their Student Contact Management System based on Mongo DB and developed on Spring Boot MVC.",
+            "Implemented a Data Access Layer and Service layer to increase modularity and performed create/read/update/delete functionalities."
+         ]
+      },
+      {
+         "name":"To-Do List",
+         "start_date":"Nov.2022",
+         "end_date":"Dec.2022",
+         "description":[
+            "Developed a To-Do List system on Angular and utilized Github Action to conduct CI/CD practice and automate the building and testing process with 100% code coverage."
+         ]
+      },
+      {
+         "name":"Software Testing",
+         "start_date":"Jan.2022",
+         "end_date":"May.2022",
+         "description":[
+            "Applied Dependency Injection design pattern on Spring for Micro Services programs, then conducted Unit testing and integration testing.",
+            "Tested online material management systems using Mockito for services mocking and Selenium for automated web testing."
+         ]
+      },
+      {
+         "name":"Knowledge-Grab",
+         "start_date":"Sep.2021",
+         "end_date":"Dec.2021",
+         "description":[
+            "Provided an online learning platform for UMD students by developing a full-stack online learning/teaching platform on Angular and deploying on AWS EC2 with a satisfaction rate of 90%.",
+            "Modularize the system by implementing a Database Access Layer and applying a micro-services design pattern."
+         ]
+      },
+      {
+         "name":"FoodieCare - Recommendation system for foodies",
+         "start_date":"Dec.2017",
+         "end_date":"May.2018",
+         "description":[
+            "Delivered an impactful online restaurant recommending system on the .NET framework, leveraging Python web crawlers with multi-threading to gather a substantial dataset of approximately 20,000 entries."
+         ]
+      }
+   ]
+}
