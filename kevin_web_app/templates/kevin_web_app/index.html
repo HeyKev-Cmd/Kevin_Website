@@ -103,8 +103,10 @@ https://www.tooplate.com/view/2120-ben-resume
                     
                     <div>
                         <h3 >About me</h3>
+                        <hr></hr>
+                        <h5>Personal Info:</h5>
                         <ul>
-                            <div><strong>Personal Info:</strong></div>
+                            
                             <li><strong>Full Name:</strong> {{ info.info.first_name }} {{ info.info.last_name}} </li>
                             <li><strong>Date of Birth:</strong> {{ info.info.dob}}</li>
                             <li><strong>phone:</strong> {{ info.info.phone}}</li>
@@ -117,9 +119,9 @@ https://www.tooplate.com/view/2120-ben-resume
                             </li>
                             
                         </ul>
-                    
+                        <h5>Skills:</h5>
                         <ul>
-                        <div><strong>Skills:</strong></div>
+                        
                             <li><strong>Certifications :</strong> {{ info.skills.certifications|join:', ' }} </li>
                             <li><strong>Programming Languages:</strong> {{ info.skills.programmingLanguages|join:', ' }} </li>
                             <li><strong>Frameworks :</strong> {{ info.skills.frameworks|join:', ' }} </li>
