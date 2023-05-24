@@ -102,6 +102,22 @@
    ],
    "projects":[
       {
+         "name":"Kevin’s website",
+         "start_date":"Apr.2023",
+         "end_date":"May.2023",
+         "description":[
+            "Developed and launched a dynamic personal website using the Django framework, integrating API calls to retrieve and display personalized data, resulting in an engaging user experience that effectively showcases my skills, projects, and achievements."
+         ]
+      },
+      {
+         "name":"Weather Comparison and Analysis Tool",
+         "start_date":"Mar.2023",
+         "end_date":"Apr.2023",
+         "description":[
+            "Successfully designed and implemented a Django project, leveraging OpenWeatherMap.org's API, enabling users to compare and analyze weather data, resulting in enhanced decision-making capabilities and an improved understanding of weather patterns and forecasts."
+         ]
+      },
+      {
          "name":"Student Management System",
          "start_date":"Nov.2022",
          "end_date":"Jan.2023",
