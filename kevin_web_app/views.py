@@ -12,7 +12,7 @@ from rest_framework.renderers import JSONRenderer, TemplateHTMLRenderer
 class IndexView(View):
 # Create your views here.
     def __init__(self):
-        path= os.path.join(os.path.dirname(os.path.dirname(__file__)),'kevin_web_app\data\personal_info.json')
+        path= os.path.join(os.path.dirname(os.path.dirname(__file__)),'kevin_web_app/data/personal_info.json')
         self.info=json.load(open(path,"r"))
         self.logger = logging.getLogger(__name__)
     def get(self,request):
@@ -22,7 +22,7 @@ class IndexView(View):
 class View_API(APIView):
 # Create your views here.
     def __init__(self):
-        path= os.path.join(os.path.dirname(os.path.dirname(__file__)),'kevin_web_app\data\personal_info.json')
+        path= os.path.join(os.path.dirname(os.path.dirname(__file__)),'kevin_web_app/data/personasl_info.json')
         self.info=json.load(open(path,"r"))
         self.logger = logging.getLogger(__name__)
     def get(self,request):
